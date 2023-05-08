@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "neurimboGothicRegular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/neurimboGothicRegular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GoryeongStrawberry";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/GoryeongStrawberry.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KCCChassam";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "KCCChassam";
+}
+body {
+  background-image: url(./img/papperPink.jpg);
+  background-size: cover;
+  color: #f08080;
+}
+.wrap_con {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.wrap {
+  max-width: 600px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.wrap_con::before {
+  content: "";
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  transform: translateX(-40%);
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+
+  background-image: url(./img/Gift.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h1 {
+  text-align: center;
+  padding: 2rem 0;
+  line-height: 1;
+  font-family: "neurimboGothicRegular";
+}
+.guide_chat {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+.guide_chat > label {
+  width: 100%;
+  margin: 0.5rem 0;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.guide_chat > input {
+  border: none;
+  outline: none;
+  background-color: #f79d9d;
+  border-radius: 2rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  margin-right: 2rem;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+}
+::placeholder {
+  color: #fff;
+}
+.guide_chat > input:focus {
+  background-color: #fafde9;
+  color: #f79d9d;
+}
+#btnSendMessage {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-top: 3rem;
+  background-color: transparent;
+}
+#btnSendMessage span {
+  padding: 0.75rem 2.5rem;
+  background-color: #f79d9d;
+  color: #fff;
+  cursor: pointer;
+  font-family: "KCCChassam";
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+#btnSendMessage span:hover {
+  background-color: #fafde9;
+  color: #f79d9d;
+}
+.chat_con {
+  display: block;
+  background-color: #fafde920;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 60%;
+  overflow-y: scroll;
+}
+.chat_con::-webkit-scrollbar {
+  display: none;
+}
+.loder {
+  /* display: flex; */
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  color: f79d9d;
+  font-size: 2.5rem;
+}
+.loder > p {
+  width: 100%;
+  font-size: 1.75rem;
+  padding: 1rem 0 2rem;
+}
+
+.chat-input {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  /* flex-wrap: wrap; */
+}
+.chat-input input {
+  font-family: "KCCChassam";
+  outline: none;
+  border: none;
+  padding: 1rem;
+  width: 80%;
+  background-color: #fff;
+  color: #f79d9d;
+  text-align: center;
+  border-radius: 2rem;
+}
+.chat-input input::placeholder {
+  color: #f79d9d;
+}
+.chat-input input:focus {
+  background-color: #fafde9;
+  color: #f79d9d;
+}
+.chat_message {
+  display: flex;
+}
+.chat_message:nth-child(2n) {
+  justify-content: flex-end;
+}
+.chat_message > p {
+  /* background-color: #fae8d0; */
+  padding: 1rem;
+  width: 70%;
+  border-radius: 1rem;
+  background-color: #fff;
+  margin: 0.5rem 0;
+  color: #444;
+}
+.chat_message > .assistant {
+  background-color: #feebd6;
+}
+
+.chat-input button {
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-color: #f79d9d;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+  font-family: "KCCChassam";
+}
+.chat-input button:hover {
+  background-color: #fafde9;
+  color: #f79d9d;
+}
+.chat-input button:nth-of-type(2) {
+  margin-right: 0;
+}
+
+.kakaoAdd {
+  position: absolute;
+  bottom: 0;
+  background-color: #eaeaea;
+  height: 100px;
+  width: 100%;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>일정정하기</title>
+  </head>
+  <body>
+    <div class="wrap_con">
+      <div class="wrap">
+        <h1>
+          Welcome<br />
+          Happy Gift
+        </h1>
+
+        <div class="guide_chat">
+          <label for="place">선물상자를 받을 친구의 성별을 알려주시오!</label>
+          <input type="text" id="place" placeholder="ex&#41; 남자" />
+
+          <label for="date">나이도 알려주세요!</label>
+          <input type="text" id="date" placeholder="ex&#41; 28" />
+
+          <button id="btnSendMessage"><span>추천받기</span></button>
+        </div>
+        <div class="loder">
+          <p>
+            로딩 중입니다 <br />
+            잠시만기다려주세요
+          </p>
+          <i class="fa-solid fa-spinner fa-spin icon"></i>
+        </div>
+        <div class="chat_con">
+          <!-- 답변내용출력 -->
+          <!-- <div class="chat_message">
+          <p class="assistant">GPT 대답채팅내용</p>
+        </div>
+        <div class="chat_message">
+          <p>사용자 질문내용</p>
+        </div> -->
+        </div>
+        <div class="chat-input">
+          <input
+            type="text"
+            id="question"
+            placeholder="선물에 대해서 추가 질문이 있다면 알려주세요!"
+          />
+
+          <button id="btn">추가질문</button>
+          <button class="restart"><span>재시작</span></button>
+        </div>
+        <div class="kakaoAdd">
+          <ins
+            class="kakao_ad_area"
+            style="display: none"
+            data-ad-unit="DAN-dw2VaakNLDIjpBzR"
+            data-ad-width="320"
+            data-ad-height="100"
+          ></ins>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="//t1.daumcdn.net/kas/static/ba.min.js"
+      async
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
