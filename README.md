@@ -6,11 +6,15 @@ chat GPT를 활용한 선물 추천 웹앱 프로젝트
 
 <img src="https://github.com/EUNSOLY/ChatGPT_Gift/blob/master/frontend/readmeImg/mockup.jpg?raw=true" alt="moukup"  >
 
-🖐 요즘 유행하는 chatGPT 오픈 API소스를 활용하여 선물 추천해주는 웹앱 생성 채팅처럼 주고받을 수 있도록 만들었다.
+### 🖐 요즘 유행하는 chatGPT 오픈 API소스를 활용하여 선물 추천해주는 웹앱 생성 채팅처럼 주고받을 수 있도록 만들었다.
 
-📌 개발기간
+<br/>
+
+### 📌 개발기간
 
 > 2023.05.08 ~ 2023.05.09
+
+<br/>
 
 ### 📌 사용 툴
 
@@ -37,7 +41,9 @@ chat GPT를 활용한 선물 추천 웹앱 프로젝트
 <br/>
 <br/>
 
-chat api 코드
+## 🖐Chat API 사용코드
+
+<br/>
 
 ```
 let apiKey = "";
@@ -48,7 +54,9 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 ```
 
-서버에 호스팅 할 때 실제 http연결 하기 위해 라이브러리 사용
+## 🖐서버에 호스팅 할 때 실제 http연결 하기 위해 라이브러리 사용
+
+<br/>
 
 ```
 const serverless = require("serverless-http");
@@ -56,14 +64,32 @@ const serverless = require("serverless-http");
 module.exports.handler = serverless(app);
 ```
 
-### 프로젝트 진행 중 특이사항
+## 🖐kakaoadfit광고 붙여 보기
+
+실제 배포된 사이트라면 kakaoadfit에서 광고를 붙일 수 있다
+
+1. kakao AdFit 로그인 (카카오계정으로 연결되서 사용된다.)
+2. 광고관리 탭에서 매체등록을 진행한다.  
+   a. 매체정보입력
+   b. Web 매체 (서버에 배포된 사이트 url)
+   c. 광고 형태 체크하기
+3. 등록하면 일정 기간 이후 승인처리 된다.
+   <br/>
+
+> 위와 같은 방법으로 광고 등록하기 가능! (광고클릭하면 조금씩 돈이 들어온다고는한다..!)
+
+<br/>
+
+### 🖐프로젝트 진행 중 특이사항
 
 > backend 서버 구동은 aws를 이용하고 frontend 구동은 cloudflare를 활용했다.  
 > 두 플랫폼을 연동하기 위해서 awsurl생성을 진행했지만 연결이 안되는 현상이 발생해서
 > awsAPI로 게이트웨이를 추가하여 실행하였다.
 > 실제 local에서 진행 할 경우 CORS이슈가 생성 되어서 해당 이슈를 해결하기 위해서 CORS라이브러리를 다운받고 index.js에서 추가 설정을 진행하였다.
 
-CORS 이슈 해결 코드
+<br/>
+
+### 🖐CORS 이슈 해결 코드
 
 ```
 const cors = require("cors");
@@ -73,9 +99,11 @@ let corsOptions = {
 };
 ```
 
-### 새로알게된 점
+### 🖐새로알게된 점
 
 > chatGPT오픈 API를 활용하였기 때문에 Playground활용법과 APIreference탭에서 key발급 받는 예습을 할 수 있었다.
 > chatGPT 오픈 KEY값은 오픈된 사이트(github..)에 올라가면 오픈사이트에 공개된것을 감지하고 key값을 사라지게 한다. 이로인한 오류현상을 확인하였고 보통은 chat에 연결되어있는 email로 해당 내용을 안내받을 수 있다.  
 > key 값이 사라지면 걱정할 것 없이 재 발급 받으면된다
 > key값은 처음 생성시에만 fullkey를 보여주고 이후에는 보여주지 않는다.
+
+<br/>
