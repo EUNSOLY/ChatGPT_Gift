@@ -4,7 +4,7 @@
 
 chat GPT를 활용한 선물 추천 웹앱 프로젝트
 
-<img src="https://github.com/EUNSOLY/ChatGPT_Gift/blob/master/frontend/readmeImg/mockup.jpg?raw=true" alt="moukup"  >
+<img src="https://github.com/EUNSOLY/ChatGPT_Gift/blob/master/frontend/readmeImg/mockup.jpg?raw=true" alt="moukup"  width="400px" >
 
 ### 🖐 요즘 유행하는 chatGPT 오픈 API소스를 활용하여 선물 추천해주는 웹앱 생성 채팅처럼 주고받을 수 있도록 만들었다.
 
