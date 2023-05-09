@@ -2,4 +2,4 @@
 
 ## [Demo](https://etourguide.pages.dev/)
 
-<img src="" alt="moukup" >
+<img src="https://raw.githubusercontent.com/EUNSOLY/ChatGPT_Gift/0717182071ac249a860f4b57243bd2bf9e5fd77f/frontend/readmeImg/mockup.jpg" alt="moukup" width="550px" >

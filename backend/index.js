@@ -1,4 +1,4 @@
-let apiKey = "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";
+let apiKey = "";
 
 const { Configuration, OpenAIApi } = require("openai");
 const express = require("express");
