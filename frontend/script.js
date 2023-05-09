@@ -31,20 +31,9 @@ const sendMessage = async () => {
   chatCon.appendChild(chatMessageDiv);
   userMessages.push(chatInput.value);
 
-  // if (myPlace.trim() == "" && myDate.trim() == "") {
-  //   alert("정확한 정보를 입력해주세요 예) 여자, 28");
-  // } else if (
-  //   typeof myPlace.trim() == String &&
-  //   typeof myDate.trim() == String
-  // ) {
-
-  // }
   guide_chat.style.display = "none";
   loder.style.display = "flex";
 
-  // const response = await fetch(
-  // "https://wk0467hkgj.execute-api.ap-northeast-2.amazonaws.com/props/guide",
-  // {
   const response = await fetch("http://localhost:3000/guide", {
     method: "post",
     headers: {
@@ -70,8 +59,6 @@ const sendMessage = async () => {
 
   chatMessageDiv.innerHTML = `<p class="userMessages"> 성별 : ${myPlace}, 연령 : ${myDate}세의 생일선물을 추천해줘</p>`;
   chatCon.appendChild(astrologerMessage);
-  // chatMessage.innerText += data.assistant;
-  // chatMessage.innerHTML += data.assistant.replace(/\n/g, "<br/>");
 
   chatCon.style.display = "block";
   chatCon.scrollTop = chatCon.scrollHeight;
