@@ -14,14 +14,10 @@ chat GPT를 활용한 선물 추천 웹앱 프로젝트
 
 > 2023.05.08 ~ 2023.05.09
 
-<br/>
-
 ### 📌 사용 툴
 
 > <img src="https://img.shields.io/badge/AdobePhotoshop-31A8FF?style=flatt&logo=Adobe Photoshop&logoColor=white"/>
 > <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flatt&logo=Visual Studio Code&logoColor=white"/>
-
-<br/>
 
 ### 📌 개발 언어
 
@@ -29,8 +25,6 @@ chat GPT를 활용한 선물 추천 웹앱 프로젝트
 > <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white"/>
 > <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=black"/>
 > <img src="https://img.shields.io/badge/node.js-339933?style=flat&logo=nodedotjs&logoColor=black"/>
-
-<br/>
 
 ### 📌 사용 플랫폼
 
