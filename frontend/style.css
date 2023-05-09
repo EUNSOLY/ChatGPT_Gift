@@ -38,6 +38,7 @@ body {
   position: relative;
   max-width: 600px;
   margin: 0 auto;
+  width: calc(100% - 1rem);
 }
 .wrap {
   max-width: 600px;
