@@ -58,7 +58,7 @@ const serverless = require("serverless-http");
 module.exports.handler = serverless(app);
 ```
 
-## 🖐kakaoadfit광고 붙여 보기
+## 🖐kakao AdFit광고 붙여 보기
 
 실제 배포된 사이트라면 kakaoadfit에서 광고를 붙일 수 있다
 
@@ -67,7 +67,8 @@ module.exports.handler = serverless(app);
    a. 매체정보입력
    b. Web 매체 (서버에 배포된 사이트 url)
    c. 광고 형태 체크하기
-3. 등록하면 일정 기간 이후 승인처리 된다.
+3. 광고를 내 code에 넣을 수 있도록 코드 생성
+4. 등록하면 일정 기간 이후 승인처리 된다.
    <br/>
 
 > 위와 같은 방법으로 광고 등록하기 가능! (광고클릭하면 조금씩 돈이 들어온다고는한다..!)
